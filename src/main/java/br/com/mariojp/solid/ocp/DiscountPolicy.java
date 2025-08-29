@@ -2,9 +2,10 @@ package br.com.mariojp.solid.ocp;
 
 public interface DiscountPolicy {
 
-public double descontarValor(double amount);
+public double apply(double amount);
 
 }
+
 //Refatore aplicando OCP:
 //Crie uma interface DiscountPolicy que define apply(double amount).
 //Implemente políticas concretas: RegularPolicy, PremiumPolicy, PartnerPolicy.
